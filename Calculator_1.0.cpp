@@ -1,6 +1,8 @@
 #include <iostream>
 #include <cmath>
-#include <windows.h>
+#include <thread>
+#include <chrono>
+
 
 using std::cout;
 using std::cin;
@@ -12,11 +14,11 @@ int main(){
 
 
     cout<<"\n-----------Welcome to the C++ Calculator!-----------"<<"\n";
-    Sleep(500);
+    std::this_thread::sleep_for(std::chrono::milliseconds(500);
     
     while(true){
         cout<<"\nEnter the number as per the following list:\n";
-        Sleep(1500);
+        std::this_thread::sleep_for(std::chrono::milliseconds(1500);
         cout<<"1. Addition\n"
             <<"2. Subtraction\n"
             <<"3. Multiplication\n"
@@ -665,7 +667,7 @@ int main(){
                 break;
             }
         }
-        Sleep(2000);
+        std::this_thread::sleep_for(std::chrono::milliseconds(2000);
     }
     return 0;
 }
